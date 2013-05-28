@@ -7,8 +7,12 @@
 ### 教程/手册
 
 * [入门] [Code School - Try Git](http://try.github.io/levels/1/challenges/1)
+* [入门] 
+* [入门] [git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
+ * [入门] [git - 简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+ * [入门] [git cheet sheed](http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
 * [入门] [图解Git](http://marklodato.github.io/visual-git-guide/index-en.html)
-* [入门] [图解Git(中文)](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
+ * [入门] [图解Git(中文)](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
 * [中级] [ProGIT](http://git-scm.com/book)
 * [中级] [ProGIT(中文)](http://git-scm.com/book/zh)
 
