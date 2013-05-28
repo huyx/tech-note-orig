@@ -12,19 +12,6 @@
 * [中级] [ProGIT](http://git-scm.com/book)
 * [中级] [ProGIT(中文)](http://git-scm.com/book/zh)
 
-### 常用操作
-
-* 帮助
- * `git help` - !!!别忘了，学会查看帮助!!!
- * `git help stash`
-* 配置
- * `git config list`
- * `git config`
-* 添加到 Stage
- * `git add hello.txt`
- * `git add '*.txt'`
-* 分支
-
 ## Git服务器
 
 ### GitLab
@@ -35,5 +22,23 @@
 
 ### GitHub
 
-* [主页](https://github.com/)
+* [GitHub](https://github.com)
+* [GitHub Help](https://help.github.com)
+* [GitHub入门](http://liuzhijun.iteye.com/blog/1457207)
 * [教程][GotGitHub(蒋鑫)](http://www.worldhello.net/gotgithub/)
+
+## 常见问题
+
+### TortoiseGIT 如何用选择 ssh 客户端
+
+* 右键： TortoiseGIT/Settings/Network/ssh Client
+ * 如果要使用 OpenSSH，输入 ssh.exe 即可
+ * 如果要使用 TortoiseGitPLink.exe，需要指定全路径
+
+### 密钥文件产生和管理
+
+* 生成: `ssh-keygen -t rsa`
+* 上传到服务器上
+* 
+
+
