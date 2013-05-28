@@ -7,7 +7,6 @@
 ### 教程/手册
 
 * [入门] [Code School - Try Git](http://try.github.io/levels/1/challenges/1)
-* [入门] 
 * [入门] [git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
  * [入门] [git - 简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)
  * [入门] [git cheet sheed](http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
