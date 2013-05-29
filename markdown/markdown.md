@@ -9,6 +9,16 @@
 
 Windows 下可以用 MarkdownPad，有免费版和高级版，高级版支持 github 扩展语法等。
 
+### ReText
+
+据说是可以支持 reStucturedText 和 Markdown，我试了试：
+
+* 安装麻烦，需要下载和安装，Markups、PyQt4、ReText
+* 安装显示不正常，许多工具条按钮出不来
+* 相关功能找不到！！我太笨了还是怎么的？
+
+反正是受不了，卸载了吧！
+
 ## 其他
 
 ### 扩展名
