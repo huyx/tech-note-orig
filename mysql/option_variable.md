@@ -1,11 +1,28 @@
-## ¼ò½é
+## ç®€ä»‹
 
-MySQL ¾¿¾¹ÓĞ¶àÉÙ¸öÑ¡Ïî£¿ÓĞ¶àÉÙ¸ö±äÁ¿£¿ºÜÄÑËµµÃÇå£¬·´ÕıºÜ¶à£¬¶øÇÒ»¹ÔÚ²»¶ÏÔö¼ÓÖĞ¡£¸ø¸ö´ó¸ÅµÄ¸ÅÄî£º
+MySQL ç©¶ç«Ÿæœ‰å¤šå°‘ä¸ªé€‰é¡¹ï¼Ÿæœ‰å¤šå°‘ä¸ªå˜é‡ï¼Ÿå¾ˆéš¾è¯´å¾—æ¸…ï¼Œåæ­£å¾ˆå¤šï¼Œè€Œä¸”è¿˜åœ¨ä¸æ–­å¢åŠ ä¸­ã€‚ç»™ä¸ªå¤§æ¦‚çš„æ¦‚å¿µï¼š
 
-* [MySQL Ñ¡Ïî±í](http://dev.mysql.com/doc/refman/5.7/en/mysqld-option-tables.html)
-* ÊäÈëÃüÁî: `SHOW VARIABLES;`
-* ÊäÈëÃüÁî: `SHOW STATUS;` 
+* [MySQL é€‰é¡¹è¡¨](http://dev.mysql.com/doc/refman/5.7/en/mysqld-option-tables.html)
+* è¾“å…¥å‘½ä»¤: `SHOW VARIABLES;`
+* è¾“å…¥å‘½ä»¤: `SHOW STATUS;` 
 
-### ¼¸¸öÓĞÓÃµÄÑ¡Ïî
+### å‡ ä¸ªæœ‰ç”¨çš„é€‰é¡¹
 
-* `innodb_file_per_table` - Ã¿¸ö innodb ¶¼±£´æµ½²»Í¬µÄÎÄ¼şÖĞ£¬ÔÚ°æ±¾5.6.6ºóÒÑ¾­ÊÇÈ±Ê¡ÉèÖÃÁË£¬²»¹ıÔÚÕâÖ®Ç°£¬»¹ĞèÒª×Ô¼ºÉèÖÃ¡£
+#### `innodb_file_per_table`
+
+æ¯ä¸ª innodb éƒ½ä¿å­˜åˆ°ä¸åŒçš„æ–‡ä»¶ä¸­ï¼Œåœ¨ç‰ˆæœ¬5.6.6åå·²ç»æ˜¯ç¼ºçœè®¾ç½®äº†ï¼Œä¸è¿‡åœ¨è¿™ä¹‹å‰ï¼Œè¿˜éœ€è¦è‡ªå·±è®¾ç½®ã€‚
+
+ä¿®æ”¹é…ç½®æ–‡ä»¶ï¼š
+
+    [mysqld]
+    innodb_file_per_table
+
+ä¿®æ”¹è¡¨ç°æœ‰è¡¨çš„è®¾ç½®ï¼š
+
+    SET GLOBAL innodb_file_per_table=1;     -- è®¾ç½®æˆ 1/0
+    ALTER TABLE table_name ENGINE=InnoDB;
+
+å‚è€ƒï¼š
+
+* [Enabling and Disabling File-Per-Table Mode](http://dev.mysql.com/doc/refman/5.7/en/tablespace-enabling.html)
+
