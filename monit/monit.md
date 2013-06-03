@@ -1,5 +1,7 @@
 # Monit
 
+* [主页](http://www.mmonit.com/)
+
 ## 安装 monit
 
 	$ sudo apt-get install monit
