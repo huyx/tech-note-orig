@@ -1,4 +1,16 @@
-# Markdown
+Markdown
+=========
+
+## 最佳入门 ##
+
+### 例子是最好的文档 ###
+
+- [官方语法说明](http://daringfireball.net/projects/markdown/syntax) [源代码](http://daringfireball.net/projects/markdown/syntax.text)
+- [繁体中文语法说明](http://markdown.tw/) [源代码](https://raw.github.com/othree/markdown-syntax-zhtw/master/syntax.md)
+
+### 介绍文章 ###
+
+- [Markdown写作浅谈](http://www.yangzhiping.com/tech/r-markdown-knitr.html)
 
 ## 编辑器
 
