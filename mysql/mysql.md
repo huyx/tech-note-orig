@@ -69,5 +69,8 @@ Ubuntu 下支持**命令补全**，例如：
 
 ## 其他 ##
 
-* 重置密码
-  * `mysqladmin -uroot password '123456'` -- #密码重置为 123456
+- 重置密码
+    - `mysqladmin -uroot password '123456'` -- #密码重置为 123456
+- mysql 导入 sql 文件中间遇到错误时继续执行下面的语句
+    - `-f`、`--force`
+
