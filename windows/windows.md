@@ -7,6 +7,25 @@
 
 ## 技巧 ##
 
+### Windows 的 uptime ###
+
+- 参考: [http://stackoverflow.com/questions/11606774/how-to-get-the-uptime-in-windows](http://stackoverflow.com/questions/11606774/how-to-get-the-uptime-in-windows)
+
+台式机还好，服务器运行多长时间了？linux 下可用用 uptime 获得，Windows 怎么办？
+
+**使用 “任务管理器”** 
+
+Windows XP 不适用，Windows 2008 适用,其他没测试
+
+- 打开任务管理
+- 选择“性能”页面
+- 仔细找找，在靠右靠下的位置
+
+**使用 systeminfo**
+
+英文系统： `systeminfo | find "System Boot Time:"`
+中文系统: `systeminfo | find "系统启动时间"`
+
 ### Windows 扩展名冲突带来的问题 ###
 
 - 环境： Windows XP
