@@ -1,8 +1,10 @@
-## Zabbix
+Zabbix
+======
 
 * [手册](http://www.zabbix.com/documentation/2.2/manual)
 
-###  安装
+安装
+----
 
 **下载解压**
 
@@ -87,10 +89,11 @@ TODO
     zabbix_get -s 192.168.0.101 -p 10050 -k mysql.status[Questions]
     zabbix_sender
 
-## 监控
+配置
+----
 
-### MySQL
-       
+### 监控MySQL ###
+
 **/usr/local/etc/zabbix_agentd.conf**
 
 	# 包括配置目录
@@ -120,14 +123,14 @@ TODO
 
 	zabbix_get zabbix_get -s 10.10.10.1 -p 10050 -k "mysql.status[Bytes_received]"
 
-### 设置自动启动
+### 设置自动启动 ###
 
 	sudo cp misc/init.d/ubuntu/zabbix-agent.conf /etc/init.d/zabbix-agent
 	sudo update-rc.d zabbix-agent defaults
 
-### 问题与解决
+## 问题与解决 ##
 
-#### server 日志中出现： /usr/sbin/fping: [2] No such file or directory
+### server 日志中出现： /usr/sbin/fping: [2] No such file or directory ###
 
 安装 fping
 
@@ -138,7 +141,15 @@ TODO
     /usr/local/etc/zabbix_server.conf
         FpingLocation=/usr/bin/fping
 
-### 其他
+### 忘记密码怎么办？ ###
+
+- [Reset Recover Zabbix Admin Password](http://www.sysadminwiki.net/site/doku.php/monitoring/zabbix/reset_recover_zabbix_admin_password)
+
+登录 MySQL 后，执行：
+
+    update zabbix.users set passwd=md5('newpass') where alias='Admin';
+
+### 其他 ###
 
 * 密码连续错 5 次会锁定 30 秒
 * 查看日志文件: `tail -f /tmp/zabbix_server.log`
