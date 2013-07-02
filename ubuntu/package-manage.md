@@ -4,6 +4,8 @@ Ubuntu 包管理
 资源
 ----
 
+- [Ubuntu 应用程序目录](https://apps.ubuntu.com/cat/)
+
 可以先到下面找一找有没有软件包。
 
 - [Lanuchpad](https://launchpad.net/)
