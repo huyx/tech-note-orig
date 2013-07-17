@@ -2,6 +2,7 @@ Redmine
 ========
 
 - [项目主页](http://redmine.org/)
+- [(荐)在 Ubuntu 上安装 Redmine 详解](http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_on_Ubuntu_step_by_step)
 
 技巧
 ----
