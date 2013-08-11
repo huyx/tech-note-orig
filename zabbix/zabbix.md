@@ -2,6 +2,7 @@ Zabbix
 ======
 
 * [手册](http://www.zabbix.com/documentation/2.2/manual)
+* [配置项参考](https://www.zabbix.com/documentation/1.8/manual/config/items)
 
 安装
 ----
