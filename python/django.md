@@ -4,6 +4,48 @@ Django
 TIPS
 ----
 
+### 管理界面中以相反方式显示 boolean 字段值 ###
+
+参考：
+
+- [django admin list_display invert (not) a boolean field](http://stackoverflow.com/questions/3867914/django-admin-list-display-invert-not-a-boolean-field)
+- [Disable on/off icon for boolean field in Django](http://stackoverflow.com/questions/13990846/disable-on-off-icon-for-boolean-field-in-django)
+
+有两种自定义方法，第一是修改 Model:
+
+	class Member(models.Model):
+		...
+
+	    def not_locked(self):
+	        return not self.locked
+
+	    not_locked.boolean = True
+	    not_locked.admin_order_field = "locked"
+	    not_locked.short_description = u"未锁定"
+
+第二种方法是修改 ModelAdmin:
+
+	class MemberAdmin(admin.ModelAdmin):
+		...
+
+	    def not_locked(self, obj):
+	        return not obj.locked
+
+	    not_locked.boolean = True
+	    not_locked.admin_order_field = "locked"
+	    not_locked.short_description = u"未锁定"
+
+注意其中 not_locked 方法多了一个 obj 对象。
+
+然后再 ModelAdmin 中指定：
+
+    list_display = [... "not_locked" ...]
+
+要在单个对象界面显示这个字段，需要同时在 readonly_fields 中指定：
+
+	fields = [ ... "not_locked" ...]
+	readonly_fields = [ ... "not_locked" ...]
+
 ### 管理界面中显示日期的域长度不够，日期显示不全 ###
 
 dirty 但是简单的方法，查看显示页面源代码，发现:
