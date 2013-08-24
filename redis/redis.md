@@ -26,6 +26,7 @@
 
 	$ sudo pip install redis
 
+
 ## 问题 ##
 
 ### BUG: slave+readonly 模式的 redis 服务器不支持 sort ###
