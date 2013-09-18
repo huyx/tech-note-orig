@@ -53,6 +53,19 @@ Ubuntu 下支持**命令补全**，例如：
     -  `~` 取反（位运算）
     -  `!` 非（逻辑运算）
 
+#### 数据库改名 ####
+
+参考:
+
+- [RENAME TABLE Syntax](http://dev.mysql.com/doc/refman/5.5/en/rename-table.html)
+
+说明：
+
+- 不能直接改名： 曾经有这个命令，因为有一定风险，又去掉了
+- 可以采用表改名： 表改名时可以修改到数据库
+
+	RENAME TABLE current_db.tbl_name TO other_db.tbl_name;
+
 ## 服务器配置 ##
 
 ### 字符集 ###
