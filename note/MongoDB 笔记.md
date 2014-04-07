@@ -1,5 +1,10 @@
-MongoDB 配置
+MongoDB 笔记
 ============
+
+参考：
+
+- [MongoDB Reference](http://docs.mongodb.org/manual/reference/)
+  - [Connection String URI Format](http://docs.mongodb.org/manual/reference/connection-string/)
 
 配置文件和脚本
 --------------
@@ -128,31 +133,6 @@ MongoDB 配置
 说明：
 
 - chunkSize 选项只在集群初始化时有用，因此建议都用上面的方法设置，以免造成疑惑。
-
-MMS 监控
---------
-
-### 安装
-
-参考：
-
--  <https://mms.mongodb.com/settings/monitoring-agent>
-
-1. 下载
-
-    axel https://mms.mongodb.com/download/agent/monitoring/mongodb-mms-monitoring-agent_2.0.1.23-1_amd64.deb
-
-2. 安装
-
-    udo dpkg -i mongodb-mms-monitoring-agent_2.0.1.23-1_amd64.deb
-
-3. 编辑 `etc/mongodb-mms/monitoring-agent.config`
-
-    mmsApiKey=...
-
-4. 启动 agent
-
-    sudo start mongodb-mms-monitoring-agent
 
 pymongo
 --------
