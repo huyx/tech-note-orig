@@ -31,3 +31,15 @@ Windows 8 使用技巧
 - 测试版: <https://www.google.com/chrome/eula.html?hl=zh-CN&standalone=1&extra=betachannel>
 - 开发版: <https://www.google.com/chrome/eula.html?hl=zh-CN&standalone=1&extra=devchannel>
 
+### 如何关闭 Windows 8 任务栏透明效果？
+
+下载工具: Opaque Taskbar for Windows 8
+
+- <http://winaero.com/comment.php?comment.news.199>
+- <http://winaero.com/download.php?view.47>
+
+### 联想相关 FAQ
+
+- [Windows 8中打开应用商店显示未连接到Internet](http://think.lenovo.com.cn/htmls/knowledge/detail_20120730111116373.html)
+居然又是 DNS 问题，够垃圾有没有？
+- [如何Windows 8.1开机显示桌面](http://think.lenovo.com.cn/htmls/knowledge/detail_20140310104706442.html)
